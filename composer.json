@@ -1,0 +1,17 @@
+{
+    "name": "raf_s/ags",
+    "autoload": {
+        "psr-4": {
+            "RafS\\Ags\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "SirTifix",
+            "email": "carltrebors0110@gmail.com"
+        }
+    ],
+    "require": {
+        "phpoffice/phpspreadsheet": "^4.2"
+    }
+}

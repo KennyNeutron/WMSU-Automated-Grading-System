@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700&display=swap");
+
+:root {
+  --primary-color: #952323;
+  --dark-color: rgb(6, 6, 6);
+}
+
+.color-black {
+  color: var(--dark-color);
+  transition: 0.1s linear;
+}
+.color-black:hover {
+  color: rgb(20, 20, 20) !important;
+  letter-spacing: 2px;
+}
+.bg-none {
+  background-color: #ffffff00;
+}
+
+.brand-color {
+  color: var(--primary-color) !important;
+  padding: 0.5em 0 !important;
+}
+.change-pass:hover {
+  text-decoration: underline !important;
+}
+.brand-border-color {
+  border: var(--primary-color) 2px solid !important;
+}
+
+.brand-bg-color {
+  background-color: var(--primary-color) !important;
+  color: whitesmoke !important;
+  border: none;
+  transition: 0.1s linear;
+}
+
+.brand-bg-color:hover {
+  background-color: #7d1b1b !important;
+  color: white;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: var(--primary-color) !important;
+  color: whitesmoke !important;
+  border: none;
+}
+
+.dropdown-menu-left {
+  left: -78px !important;
+}
+
+header .dropdown-toggle::after {
+  display: none !important;
+}
+
+*:focus,
+*:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none !important;
+  transition: 0.1s linear;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+}
+
+body .home main {
+  margin-left: 215px;
+  transition: 0.1s linear;
+}
+/* sidepanel collapse */
+body .home.collapse {
+  display: block;
+}
+
+body .home.collapse main {
+  margin-left: 90px;
+}
+
+body .home.collapse .side .sidepanel {
+  width: 90px !important;
+}
+
+body .home.collapse .side span {
+  display: none;
+}
+
+body .home.collapse .side ul li {
+  display: flex;
+  justify-content: center;
+}
+
+body .home.collapse .side img {
+  margin: 0 !important;
+}
+
+body .home.collapse .side .nav-item .link-grp {
+  flex-direction: column;
+  align-items: center;
+}
+
+body .home.collapse .side .account strong {
+  display: none;
+}
+
+body .home.collapse .side .account .d-flex {
+  justify-content: center;
+}
+
+body .home.collapse .side .link-grp .nav-link {
+  margin: 0 !important;
+  border: none !important;
+}
+
+.home.collapse .gap-1 {
+  gap: 0 !important;
+}
+
+#sidebarMenu.collapsed {
+  width: 50px !important;
+}
+
+.home .side .nav-item .nav-link.active {
+  background-color: var(--primary-color);
+}
+
+.home .side .nav-item .nav-link:hover {
+  background-color: #ee7e7e;
+}
+
+.home.collapse .side .nav-item .nav-link.active {
+  margin-bottom: 0.2rem !important;
+  gap: 0px !important;
+}
+
+header .dropdown-menu.text-small.shadow.show {
+  left: -135px !important;
+}
+
+.custom-dropdown {
+  width: 400px !important;
+}
+.custom-item p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  line-height: 1.5;
+  max-height: calc(1.5em * 3);
+  white-space: normal;
+}
+
+.curriculum .bx {
+  font-size: 75px;
+  opacity: 0.5;
+}
+
+#main_profiling_wrapper button.btn.btn-secondary,
+#manage_acc_wrapper button.btn.btn-secondary,
+#acc_setup_wrapper button.btn.btn-secondary,
+#main_faculty_regular_wrapper button.btn.btn-secondary,
+#main_faculty_visiting_wrapper button.btn.btn-secondary {
+  display: none;
+}
+
+table.dataTable tbody th,
+table.dataTable tbody td {
+  white-space: nowrap !important;
+}
+
+#main_faculty_visiting_wrapper {
+  overflow: auto;
+}
+
+/* USER PROFILE CHENGE */
+
+.user .profile-pic {
+  color: transparent;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.user .profile-pic .label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 200px;
+  height: 200px;
+  z-index: 1000;
+  border-radius: 5px;
+}
+
+.user .profile-pic .label:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  z-index: 1000;
+  transition: background-color 0.2s ease-in-out;
+  border-radius: 5px;
+  margin-bottom: 0;
+}
+
+.user .profile-pic .label span {
+  display: inline-flex;
+  padding: 0.2em;
+  height: 2em;
+  font-size: 1em;
+}
+
+.user .profile-pic input {
+  display: none;
+}
+
+.user .profile-pic img {
+  position: absolute;
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+  border: 3px solid var(--main-color);
+  z-index: 0;
+}
+
+.curriculum .dropdown-container,
+.course .dropdown-container {
+  position: absolute;
+  top: 10px;
+  right: 35px;
+}
+
+.curriculum .dropdown-menu,
+.course .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  border-radius: 4px;
+}
+
+.curriculum .bx-dots-vertical-rounded:hover,
+.course .bx-dots-vertical-rounded:hover {
+  cursor: pointer;
+  background-color: #fc7272;
+  border-radius: 50%;
+}
+
+.curriculum .dropdown-menu .dropdown-item,
+.course .dropdown-menu .dropdown-item {
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.curriculum .dropdown-menu .dropdown-item:hover,
+.dropdown-menu .dropdown-item:hover {
+  background-color: #ee7e7e;
+  cursor: pointer;
+}
+
+/* .curriculum .dropdown-container:hover .dropdown-menu {
+  display: block;
+} */
+
+.curriculum .stretched-link,
+.course .stretched-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.curriculum .bx.bx-dots-vertical-rounded,
+.course .bx.bx-dots-vertical-rounded {
+  z-index: 2;
+}

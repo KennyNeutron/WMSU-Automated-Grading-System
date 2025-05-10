@@ -1,0 +1,438 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700&display=swap");
+:root {
+  --primary-color: #952323;
+  --dark-color: rgb(6, 6, 6);
+}
+.sticky-btn {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: white; /* Adjust as needed */
+  padding: 15px;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  z-index: 1000;
+}
+.rank-1 {
+  background-color: #55dd75 !important;
+}
+.rank-2 {
+  background-color: #469fff !important;
+}
+.rank-3 {
+  background-color: #fad051 !important;
+}
+.text-red {
+  color: red;
+}
+.text-gray {
+  color: gray;
+}
+.sticky-top {
+  top: 0 !important;
+  z-index: 100 !important;
+  position: sticky !important;
+}
+
+.color-black {
+  color: var(--dark-color);
+  transition: 0.1s linear;
+}
+
+.color-black:hover {
+  color: rgb(20, 20, 20) !important;
+  letter-spacing: 2px;
+}
+
+.bg-none {
+  background-color: #ffffff00;
+}
+
+.brand-color {
+  color: var(--primary-color) !important;
+  padding: 0.5em 0 !important;
+}
+
+.brand-border-color {
+  border: var(--primary-color) 2px solid !important;
+}
+
+.brand-bg-color {
+  background-color: var(--primary-color) !important;
+  color: whitesmoke !important;
+  border: none;
+  transition: 0.1s linear;
+}
+
+.brand-bg-color:hover {
+  background-color: #7d1b1b !important;
+  color: white;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: var(--primary-color) !important;
+  color: whitesmoke !important;
+  border: none;
+}
+
+.dropdown-menu-left {
+  left: -100px !important;
+}
+
+header .dropdown-toggle::after {
+  display: none !important;
+}
+
+*:focus,
+*:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #ffffff;
+  transition: background-color 5000s ease-in-out 0s;
+  box-shadow: inset 0 0 20px 20px #00000000;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none !important;
+  transition: 0.1s linear;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+}
+th.component-type-column,
+td.component-type-column {
+  border-left: 1px solid #a1a1a1; /* Adds left border */
+}
+
+th.component-type-column:first-child,
+td.component-type-column:first-child {
+  border-left: none; /* Removes the first column's left border */
+}
+.login main,
+.signup main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary-color) url(../img/bg-1.png) no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+}
+
+.login-page {
+  width: 100%;
+  max-width: 400px;
+}
+
+.login img.img-fluid,
+.signup img.img-fluid {
+  height: 200px;
+}
+
+.login form .btn,
+.signup form .btn {
+  width: 100%;
+  font-size: 17px;
+  font-weight: 800;
+  color: var(--primary-color);
+  background-color: whitesmoke;
+  margin-top: 30px;
+}
+
+.login form .forgot-pass {
+  margin-top: -25px;
+  text-decoration: underline !important;
+}
+
+.login form {
+  font-size: 15px;
+}
+
+.login .field {
+  position: relative;
+  margin-bottom: 30px;
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  border-bottom: 2.5px solid whitesmoke;
+}
+
+.login .field .bx {
+  font-size: 30px;
+  padding: 10px 0;
+  padding-right: 10px;
+}
+
+.login .field input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: whitesmoke;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.login .field label {
+  position: absolute;
+  top: -5px;
+  left: 40px;
+  padding-top: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.login .field input:focus ~ label,
+.login .field input:valid ~ label {
+  top: -30px;
+  left: 0;
+  color: whitesmoke;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.login .field ::placeholder {
+  color: transparent;
+}
+
+.login a.form-text,
+.login div.form-text,
+.login div a {
+  color: whitesmoke;
+}
+
+.signup-page {
+  width: 100%;
+  max-width: 600px;
+}
+
+.signup form .field-box {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 15px;
+}
+
+.signup .field {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup .field label {
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.signup .field input,
+.signup .field select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: whitesmoke;
+  border: 3px solid whitesmoke;
+  background: transparent;
+  border-radius: 5px;
+}
+
+.signup .field select option {
+  color: var(--primary-color);
+}
+
+.signup .form-text,
+.signup .form-text a {
+  color: whitesmoke;
+  font-size: 15px;
+}
+
+.otp-field {
+  flex-direction: row;
+  column-gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.otp-field input {
+  height: 45px;
+  width: 42px;
+  border-radius: 6px;
+  outline: none;
+  font-size: 1.125rem;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+.otp-field input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+.otp-field input::-webkit-inner-spin-button,
+.otp-field input::-webkit-outer-spin-button {
+  display: none;
+}
+
+.resend {
+  font-size: 12px;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.toggle-password i {
+  pointer-events: none;
+}
+
+body .home main {
+  margin-left: 215px;
+  transition: 0.1s linear;
+}
+
+body .home.collapse {
+  display: block;
+}
+
+body .home.collapse main {
+  margin-left: 92px;
+}
+
+body .home.collapse .side span {
+  display: none;
+}
+
+body .home.collapse .side ul li {
+  display: flex;
+  justify-content: center;
+}
+
+body .home.collapse .side img {
+  margin: 0 !important;
+}
+
+.home .side .nav-item .nav-link.active {
+  background-color: var(--primary-color);
+}
+
+main .title_page {
+  color: var(--primary-color);
+}
+
+.details {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-items: start;
+  gap: 5px;
+}
+
+.home .row.dt-row .col-sm-12 {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+.column .dropdown-container {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+}
+
+.column .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  border-radius: 4px;
+}
+
+.column .bx-dots-vertical-rounded:hover {
+  cursor: pointer;
+  background-color: #fc7272;
+  border-radius: 50%;
+}
+
+.column .dropdown-menu .dropdown-item,
+.course .dropdown-menu .dropdown-item {
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.column .dropdown-menu .dropdown-item:hover,
+.dropdown-menu .dropdown-item:hover {
+  background-color: #ee7e7e;
+  cursor: pointer;
+}
+
+/* .curriculum .dropdown-container:hover .dropdown-menu {
+  display: block;
+} */
+
+.column .stretched-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.column .bx.bx-dots-vertical-rounded {
+  z-index: 2;
+}
+
+#edit_att_req:hover,
+#edit_att_req2:hover {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 992px) {
+  /* For tablets: */
+  .login img.img-fluid,
+  .signup img.img-fluid {
+    height: 175px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .login img.img-fluid,
+  .signup img.img-fluid {
+    height: 150px;
+  }
+}
